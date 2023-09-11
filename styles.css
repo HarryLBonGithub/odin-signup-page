@@ -66,7 +66,41 @@ main{
     flex-grow: 1;
 }
 
+.message-section{
+    height: 9rem;
+}
+
 .message-section > p{
     font-size: 1.5rem;
     margin: 1rem;
+    
 }
+
+.form-section{
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 5px 3px -3px #00000030;
+}
+
+.form-section > h1{
+    margin: 1rem;
+    
+}
+
+form{
+    display: flex;
+}
+
+.label-input-pair{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+input:focus{
+    outline-color: blue;
+    box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.44);;
+
+}
+
+input:invalid
