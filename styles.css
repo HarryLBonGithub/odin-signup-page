@@ -67,12 +67,16 @@ main{
 }
 
 .message-section{
-    height: 9rem;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .message-section > p{
     font-size: 1.5rem;
     margin: 1rem;
+    
     
 }
 
@@ -84,6 +88,7 @@ main{
 
 .form-section > h1{
     margin: 1rem;
+    font-size: 2rem;
     
 }
 
@@ -97,10 +102,43 @@ form{
     margin: 1rem;
 }
 
+input{
+    border-width: 1px;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 219);
+    outline-color: rgb(122, 122, 90);
+}
+
 input:focus{
     outline-color: blue;
     box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.44);;
 
 }
 
-input:invalid
+.error{
+    border-width: 1px;
+    border-radius: 3px;
+    border-color:red;
+}
+
+.error-message{
+    padding: 0px;
+    margin: 0px;
+    font-size: 0.75rem;
+    color: red;
+}
+
+.button-section{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.button-section > button{
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
+    border-width: 0px;
+    background-color: rgb(56, 90, 56);
+    padding: 0.5rem 2rem;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+}
